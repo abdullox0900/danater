@@ -1,0 +1,11 @@
+.header {
+	@apply py-[15px] border-b-[1px] border-gray-200;
+}
+
+.header_inner {
+	@apply flex justify-between items-center;
+}
+
+.header_logo {
+	@apply rotate-[-90deg];
+}
