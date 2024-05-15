@@ -3,11 +3,12 @@
 import ZapIcon from '@/assets/svg/zapIcon.gif'
 import { Children } from '@/types/children'
 import Image from 'next/image'
+import styles from './buttons.module.scss'
 
 
 export function ButtonA(props: Children) {
     return (
-        <button className='flex items-center gap-[4px] py-[10px] px-[24px] text-white rounded-[12px] transition ease-in duration-300 bg-[#00594E] hover:bg-gray-300'>
+        <button className={styles.btn}>
             <Image src={ZapIcon} alt="icon" width={20} height={20} />
             {props.children}
         </button>

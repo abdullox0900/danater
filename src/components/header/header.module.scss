@@ -1,5 +1,5 @@
 .header {
-	@apply py-[15px] border-b-[1px] border-gray-200;
+	@apply py-[15px];
 }
 
 .header_inner {
@@ -7,5 +7,5 @@
 }
 
 .header_logo {
-	@apply rotate-[-90deg];
+	@apply w-[200px];
 }

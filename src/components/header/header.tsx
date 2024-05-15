@@ -5,17 +5,20 @@ import Image from 'next/image'
 import { ButtonA, ButtonX } from '../buttons/buttons'
 import Container from '../container/container'
 import styles from './header.module.scss'
+import Link from 'next/link'
 
 function Header() {
     return (
         <header className={styles.header}>
             <Container>
                 <div className={styles.header_inner}>
-                    <Image className={styles.header_logo} src={SiteLogo} alt='logo' width={25} height={40} />
+                    <Image className={styles.header_logo} src={'https://donate.stream/images/logo-full.svg'} alt='logo' width={25} height={40} />
 
                     <div className='flex items-center gap-[10px]'>
                         <ButtonX>Danat</ButtonX>
-                        <ButtonA>Kirish</ButtonA>
+                        <Link href="/auth">
+                            <ButtonA>Kirish</ButtonA>
+                        </Link>
                     </div>
                 </div>
             </Container>
